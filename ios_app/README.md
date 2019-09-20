@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ae6bb2156af3db77c81e4ce4a2719a2cf67d60373d2025b37bb05872ce30505
-size 620
+To use the code, you need:
+1. download opencv 3.0 from https://github.com/opencv/opencv/releases/tag/3.0.0
+2. download opencv_contrib from https://github.com/opencv/opencv_contrib/releases/tag/3.0.0
+3. replace `opencv-3.0.0/platforms/ios/build_framework.py` with build_framework.py from https://gist.github.com/atinfinity/ccf4fc657c7def583b8e
+4. in terminal, run `cd ~/<my_working_directory>
+python opencv-3.0.0/platforms/ios/build_framework.py --contrib opencv_contrib-3.0.0 ios`
+
+you can get `opencv2.framework`
+
+Make a file named `Frameworks`, and put `opencv2.framewor` into `Frameworks`.
+
+Then you can use the code
